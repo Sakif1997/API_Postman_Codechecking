@@ -43,14 +43,21 @@ Body code:
 
 ### Post: Base_Url/auth
 Body code:
+```ruby
+
 {
 	"username": "admin",
 	"password": "password123"
 }
+```
+
 response code:
+```ruby
+
 {
     "token": "f66dcf8247182b9"
 }
+```
 ![pic2](https://user-images.githubusercontent.com/45315685/206578016-3d334a55-77f2-4ea8-a677-ccb6c60ff51e.PNG)
 
 
@@ -63,6 +70,7 @@ set Header:
 
 
 Body code:
+```ruby
   -d '{
 	"firstname" : "James",
 	"lastname" : "Brown",
@@ -74,6 +82,8 @@ Body code:
 	},
 	"additionalneeds" : "Breakfast"
 }
+```
+
 ![pic4](https://user-images.githubusercontent.com/45315685/206578159-d1c39363-4620-4ae7-8544-b00301b3a48b.PNG)
 
 
@@ -83,16 +93,17 @@ Body code:
 
 ### to generate date 
 #### Pre-request Script:
+```ruby
 const moment =require ('moment');
 const today = moment();
 pm.environment.set("checkin",today.add(0, 'day').format("YYYY-MM-DD"));
 pm.environment.set("checkout",today.add(15,'day').format("YYYY-MM-DD"));
+```
 
 ![date pic5](https://user-images.githubusercontent.com/45315685/206578219-8d6a8409-a39f-49bd-a35c-feacc9b6b63b.PN
 
-
-
 #### Body:
+```ruby
 {
 	"firstname" : "Sakif",
 	"lastname" : "Abdullah",
@@ -104,18 +115,22 @@ pm.environment.set("checkout",today.add(15,'day').format("YYYY-MM-DD"));
 	},
 	"additionalneeds" : "Breakfast"
 }
+```
 ![pic6](https://user-images.githubusercontent.com/45315685/206578318-cdc03f9a-6f3f-4444-baf0-d38e73b263c8.PNG)
 
 
 ### to generate random name 
 #### Pre-request Script:
+```ruby
 var fname= pm.variables.replaceIn("{{$randomUserName}}");
 pm.environment.set("fname",fname);
 var lname = pm.variables.replaceIn("{{$randomUserName}}");
 pm.environment.set("lname",lname);
+```
 
 ![pic7](https://user-images.githubusercontent.com/45315685/206578369-52cb563e-56af-4140-9a77-2655e82e3241.PNG)
 #### Body:
+```ruby
 {
 	"firstname" : "{{fname}}",
 	"lastname" : "{{lname}}",
@@ -127,6 +142,7 @@ pm.environment.set("lname",lname);
 	},
 	"additionalneeds" : "Breakfast"
 }
+```
 
 ![pic8](https://user-images.githubusercontent.com/45315685/206578451-0b130f9e-9288-4889-9fdd-ac5e5966b711.PNG)
 
@@ -138,6 +154,8 @@ pm.environment.set("lname",lname);
 ## test Stats code 
 
 ### test to check match with name , date and status code 
+
+```ruby
 var jsonData = pm.response.json();
 var code = responseCode.code;
 
@@ -163,6 +181,7 @@ switch(code){
     })
 
 }
+```
 
 ![pic10](https://user-images.githubusercontent.com/45315685/206578702-01ddf885-6eca-49c4-a37e-fb60096f3a3e.PNG)
 ![pic11](https://user-images.githubusercontent.com/45315685/206578725-63752e27-3098-4c17-89c5-e9471c0b108f.PNG)
