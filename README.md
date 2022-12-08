@@ -5,7 +5,12 @@
 This folder offers examples of how to use api methods like get, post, put, and delete to check values, giving you a basic grasp of how they work. Additionally, you may find check and report API codes here.[In API document you can find source codes and all the url to check or practice any task]
 
 # Project requirements
-
+### Java
+https://www.oracle.com/java/technologies/downloads/
+### Postman
+https://www.postman.com/
+### Node JS
+https://nodejs.org/en/
 
 ## API Source Urls:
 
