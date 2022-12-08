@@ -4,6 +4,8 @@
 
 This folder offers examples of how to use api methods like get, post, put, and delete to check values, giving you a basic grasp of how they work. Additionally, you may find check and report API codes here.[In API document you can find source codes and all the url to check or practice any task]
 
+# Project requirements
+
 
 ## API Source Urls:
 
@@ -20,6 +22,8 @@ This folder offers examples of how to use api methods like get, post, put, and d
 
 Body code:
  https://restful-booker.herokuapp.com/booking \
+ ```ruby
+
   -H 'Content-Type: application/json' \
   -d '{
 	"firstname" : "Jim",
@@ -32,6 +36,8 @@ Body code:
 	},
 	"additionalneeds" : "Breakfast"
 }
+```
+
 ![pic1](https://user-images.githubusercontent.com/45315685/206577953-831de1d8-fe09-4454-b4c5-c49daa6b77ee.PNG)
 
 
@@ -176,13 +182,13 @@ newman run “Collection Link” -e “Path”/EnvironmentName.json
 ![pic13](https://user-images.githubusercontent.com/45315685/206578813-7ab3a386-128e-4402-ac10-eda2240b4945.PNG)
 
 ### html report Generate
-only html:
+### only html:
 newman run “Collection Link” -e EnvironmentName.json -r cli,html
 ![pic15](https://user-images.githubusercontent.com/45315685/206579052-2215394a-1530-4556-9fad-ff50ff118d6d.PNG)
 ![pic16](https://user-images.githubusercontent.com/45315685/206579212-320dc842-b2d7-44be-a3a3-131bd3fc8b2e.PNG)
 ![pic17](https://user-images.githubusercontent.com/45315685/206579258-ed879f24-ddb7-4f1d-96bf-468b131e7c87.PNG)
 
-html with extra:
+### html with extra:
 newman run “Collection Link” -e EnvironmentName.json -r cli,htmlextra
 ![pic14](https://user-images.githubusercontent.com/45315685/206578976-53963987-87ef-49d9-bf8f-e10e7206e43c.PNG)
 
