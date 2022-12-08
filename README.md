@@ -187,6 +187,9 @@ switch(code){
 
 ![pic10](https://user-images.githubusercontent.com/45315685/206578702-01ddf885-6eca-49c4-a37e-fb60096f3a3e.PNG)
 ![pic11](https://user-images.githubusercontent.com/45315685/206578725-63752e27-3098-4c17-89c5-e9471c0b108f.PNG)
+![l3](https://user-images.githubusercontent.com/45315685/206582320-f60c2765-9e10-4b76-86c9-0de4737f86ba.jpg)
+![l4](https://user-images.githubusercontent.com/45315685/206582398-a37a0f1f-d29c-46d4-a60b-cc4fb4d0c426.jpg)
+
 
 ## Report Generate:
 
@@ -212,4 +215,6 @@ newman run “Collection Link” -e EnvironmentName.json -r cli,html
 ### html with extra:
 newman run “Collection Link” -e EnvironmentName.json -r cli,htmlextra
 ![pic14](https://user-images.githubusercontent.com/45315685/206578976-53963987-87ef-49d9-bf8f-e10e7206e43c.PNG)
+![l2](https://user-images.githubusercontent.com/45315685/206582221-d3e71c27-8b91-425d-9e76-41245042088b.jpg)
+
 
