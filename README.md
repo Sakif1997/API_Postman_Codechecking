@@ -16,7 +16,9 @@ This folder offers examples of how to use api methods like get, post, put, and d
 ### Method:Put -url: Base_Url/booking/id
 ### Method:Delete -url: Base_Url/booking/id
 
-
+## Visualization
+Check data in console:
+	https://github.com/Sakif1997/API_Postman_Codechecking/assets/45315685/4bf72b71-8293-44eb-abb9-2c634107ecc4
 ## Methods body code:
 
 ### Post: https://restful-booker.herokuapp.com/booking/
